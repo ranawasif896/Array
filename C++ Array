@@ -109,5 +109,29 @@ int main() {
 
 
 
+
+
+
+int mango[3],orange[3],Banana[3];
+int total[3];
+for(int i=0;i<3;i++)
+{
+    cout<<"Costumer NO."<<i+1<<endl;
+    cout<<"ENter mango:";
+    cin>>mango[i];
+    cout<<"Enter orange:";
+    cin>>orange[i];
+    cout<<"Enter Banana:";
+    cin>>Banana[i];
+
+    total[i]=(mango[i]*20)+(orange[i]*10)+(Banana[i]*5);
+}
+cout<<"---------------------------------------------"<<endl;
+cout<<"Costumer No.\tMangoes\tOranges\tBanana\tTotal Bill";
+cout<<"----------------------------------------------"<<endl;
+for(int i=0;i<3;i++)
+{
+    cout<<"NO:"<<i+1<<"\t"<<endl<<mango[i]<<"\t"<<endl<<orange[i]<<"\t"<<endl<<Banana[i]<<"\t"<<endl<<"Rs."<<total[i];
+}
     return 0;
 }
